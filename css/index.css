@@ -1,0 +1,160 @@
+/* 
+Project: Breaking Bad Quote Generator CSS
+Written By: Charles Harris III
+
+/* Resets the html margins and padding */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* 
+Main Project Container CSS
+Purpose: Format the content inside the body to be center aligned
+*/
+
+/* Formats the elements inside the body */
+.breaking-bad-project-container{
+    background-color: #206a5d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+/* end - Main Project Container CSS */
+
+/* 
+Header/Footer CSS
+Purpose: Styles the header and footer
+*/
+
+/* Header/Footer */
+.header-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf9f6;
+}
+
+/* Keeps footer at the bottom of the screen */
+.footer{
+    bottom: 0;
+    position: absolute;
+}
+
+/* Copyright text in the footer */
+.copyright{
+    color:#206a5d;
+    font-size: 0.6rem;
+    margin-left: 5%;
+}
+
+/* Project name in the header/footer */
+.project-name{
+    color:#206a5d;
+    font-size: 1rem; /* when screensize is 410px or less, resize font-size to 0.8rem */
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+/* end - Header/Footer CSS */
+
+/* 
+Breaking Bad Quote CSS
+Purpose: styles the quote and button that retrieves it
+*/
+
+/* The Breaking Bad quote text */ /*needs to be mobile first so font-size goes small - large */
+.breaking-bad-quote{
+    color: #faf9f6; /* font color */
+    font-size: 2.441rem; /* 614px breakpoint - move down size */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5% 7%; /* gets the text off the edges of the screen. Makes it easier to read */
+    text-align: center;
+}
+
+/* Person's name being quoted */ 
+.quotee{
+    color: #faf9f6; /* font color */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+/* Quote button */
+.quote-button{
+    color: #faf9f6; /* font color */
+    border: none;
+    border-radius: 25px;
+    color:#206a5d;
+    width: 300px;
+    outline: 0;
+    padding: 16px 24px;
+    margin-bottom: 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+/* Change the button state to an active one. Provides feedback to the user */
+.quote-button:hover{
+    -webkit-box-shadow: 0px 2px 7px 5px #a1a1a1; 
+    box-shadow: 0px 2px 5px 5px #a1a1a1;
+}
+/* end - Breaking Bad Quote CSS */
+
+/*
+Share Button Container CSS
+Purpose: style and align the buttons to share the quote
+*/
+
+/* Stores the share buttons */
+.share-button-container{
+    display: flex;
+    flex-wrap: nowrap; /* when screensize is less than 375px, flex-wrap: wrap */
+    justify-content: center;
+}
+
+/* Share buttons underneath quote button */
+.share-button{
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 16px 24px; /* 320px breakpoint - padding: 8px 16px */
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: #206a5d;
+    border-radius: 25px; /* when screen size is less than 450px the button radius will be 1px. */
+    outline: 0; /* prevents button border from being shown when clicked */
+    border: 1px solid #faf9f6;
+    color: #faf9f6; /* font color */
+    transition: 0.3s;
+}
+
+.share-button:hover{
+    color:#206a5d;
+    background-color: #faf9f6;
+    opacity: 0.9;
+}
+
+/* Changes the twitter-share-button class from its default style given by Twitter */
+.twitter-share-button{
+    text-decoration: none;
+    color: #faf9f6;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* end - Share Button Container CSS */
+
+
+/* 
+Responsive CSS Media Queries
+Purpose: Make project mobile-first and responsive to multiple device
+*/
