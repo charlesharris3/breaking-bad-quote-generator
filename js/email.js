@@ -68,5 +68,5 @@ document.querySelector("#email-share-button").addEventListener("click", init);
 /*
 Notes: The email is not being sent. The reason being is becasue it appears that even with
 Browserify bundling the project, the Nodemailer package itself needs to be running server-side.
-Not client-side. This error does not affect the rest of the project. 
+Not client-side. This error does not affect the rest of the project.; 
 */
